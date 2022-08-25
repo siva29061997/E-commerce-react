@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
+import data from "./data/data.json";
+import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css"
 
-function App() {
+
+
+//Merging, creating and defining props and state variables for required component
+const App = () => {
+  
+  // counter state
+  const [itemCount, setItemCount] = useState(0);
+
+  //function to check type of button for calling related functions
+  const manageItems = (event) => {
+    if (event.target.innerText === "Add to cart") {
+      addItem(event);
+
+    } else if(event.target.innerText === "Remove from cart") {
+      removeItem(event);
+    }
+  }
+
+  //add item function to increase item count
+  const addItem = (event) => {
+    setItemCount(() => itemCount + 1);
+    event.target.innerText = "Remove from cart";
+    event.target.classList.value = "btn btn-outline-danger mt-auto";
+  };
+
+  //remove item function to decrease item count
+  const removeItem = (event) => {
+    setItemCount(() => itemCount - 1);
+    event.target.innerText = "Add to cart";
+    event.target.classList.value = "btn btn-outline-dark mt-auto";
+  };
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar itemCount={itemCount} />
+      <Header />
+      <Cards data={data} manageItems={manageItems} />
+      <Footer />
+    </>
   );
 }
 
