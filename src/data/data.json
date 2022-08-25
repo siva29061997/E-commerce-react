@@ -1,0 +1,91 @@
+[
+  {
+    "Id": 1,
+    "sale": "",
+    "itemType": "Fancy Product",
+    "starCount": 4,
+    "img": "assets/71lNEAMir7L._SX450_.jpg",
+    "price": {
+      "oldPrice": "",
+      "newPrice": "$40.00 - $80.00"
+    },
+    "buttonName": "View options"
+  },
+  {
+    "sale": "sale",
+    "itemType": "Special Item",
+    "starCount": 5,
+    "img": "assets/grocery-green-queen-450x300.jpg",
+    "price": {
+      "oldPrice": "$20.00",
+      "newPrice": "$18.00"
+    },
+    "buttonName": "Add to cart"
+  },
+  {
+    "sale": "sale",
+    "itemType": "Sale Item",
+    "starCount": 3,
+    "img": "assets/Banner-450x300.webp",
+    "price": {
+      "oldPrice": "$50.00",
+      "newPrice": "$25.00"
+    },
+    "buttonName": "Add to cart"
+  },
+  {
+    "sale": "",
+    "itemType": "Popular Item",
+    "starCount": 5,
+    "img": "assets/DSC03704-Edit-1-450x300.jpg",
+    "price": {
+      "oldPrice": "",
+      "newPrice": "$40.00"
+    },
+    "buttonName": "Add to cart"
+  },
+  {
+    "sale": "sale",
+    "itemType": "Sale Item",
+    "img": "assets/New-Arrivals-3-Mobile-450x300-2.webp",
+    "starCount": 0,
+    "price": {
+      "oldPrice": "$50.00",
+      "newPrice": "$25.00"
+    },
+    "buttonName": "Add to cart"
+  },
+  {
+    "sale": "",
+    "itemType": "Fancy Product",
+    "starCount": 1,
+    "img": "assets/2021-about-us-page-books-450x300.jpg",
+    "price": {
+      "oldPrice": "",
+      "newPrice": "$120.00 - $280.00"
+    },
+    "buttonName": "View options"
+  },
+  {
+    "sale": "sale",
+    "itemType": "Special Item",
+    "starCount": 4,
+    "img": "assets/SQ_thunb_IMG_9558-450x300.jpg",
+    "price": {
+      "oldPrice": "$20.00",
+      "newPrice": "$18.00"
+    },
+    "buttonName": "Add to cart"
+  },
+  {
+    "sale": "",
+    "itemType": "Popular Item",
+    "starCount": 5,
+    "img": "assets/GAMBLING-MUSIC-AT-ONLINE-CASINOS-IN-CANADA-450x300.jpg",
+    "price": {
+      "oldPrice": "",
+      "newPrice": "$40.00"
+    },
+    "buttonName": "Add to cart"
+  }
+]
